@@ -25,7 +25,7 @@ header .logo {
 	-ms-flex-pack: center;
 	justify-content: center;
 	height: 40vh;
-	background: url(img/bg-header-desktop.png);
+	background: url(../img/bg-header-desktop.png);
 	background-size: cover;
 }
 
@@ -418,7 +418,7 @@ footer div img {
 		-ms-flex-align: center;
 		align-items: center;
 		height: 40vh;
-		background: url(img/bg-header-mobile.png);
+		background: url(../img/bg-header-mobile.png);
 		background-size: cover;
 	}
 	header .logo img {

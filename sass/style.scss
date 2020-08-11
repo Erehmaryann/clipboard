@@ -29,7 +29,7 @@ header {
 		align-items: center;
 		justify-content: center;
 		height: 40vh;
-		background: url(../img/bg-header-desktop.png);
+		background: url("../img/bg-header-desktop.png") center no-repeat;
 		background-size: cover;
 
 		img {
@@ -65,8 +65,11 @@ header {
 			.green-button,
 			.blue-button {
 				border: none;
+				color: $light-color;
 				padding: 0.8rem 1.5rem;
 				border-radius: 20px;
+				cursor: pointer;
+
 				cursor: pointer;
 				a {
 					text-decoration: none;
@@ -77,15 +80,17 @@ header {
 			.green-button {
 				background: $green-color;
 				filter: drop-shadow(4px 4px 9px $green-color);
+				transition: color, background-color .5s;
 				&:hover {
-					filter: brightness(100%);
+					filter: drop-shadow(4px 4px 9px $green-color) brightness(80%);
 				}
 			}
 			.blue-button {
 				background: $blue-color;
 				filter: drop-shadow(4px 4px 9px $blue-color);
+				transition: color, background-color .5s;
 				&:hover {
-					filter: brightness(100%);
+					filter: drop-shadow(4px 4px 9px $blue-color) brightness(80%);
 				}
 			}
 		}
@@ -267,15 +272,17 @@ section:nth-of-type(7) {
 		.green-button {
 			background: $green-color;
 			filter: drop-shadow(4px 4px 9px $green-color);
+			transition: color, background-color .5s;
 			&:hover {
-				filter: brightness(100%);
+				filter: drop-shadow(4px 4px 9px $green-color) brightness(80%);
 			}
 		}
 		.blue-button {
 			background: $blue-color;
 			filter: drop-shadow(4px 4px 9px $blue-color);
+			transition: color, background-color .5s;
 			&:hover {
-				filter: brightness(100%);
+				filter: drop-shadow(4px 4px 9px $blue-color) brightness(80%);
 			}
 		}
 	}
